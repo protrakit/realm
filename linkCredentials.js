@@ -6,6 +6,8 @@
 const app = new Realm.App({ id: 'REALM_ID' });
 const credentials = Realm.Credentials;
 
+oauth();
+
 function oauth () {
     var parameters = new URLSearchParams(window.location.search);
     var token = window.location.hash.match(/#access_token=([^&]+)/);
